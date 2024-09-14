@@ -1,179 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario</title>
-  </head>
-  <div>
-    <header>FORMULARIO ACTIVIDAD 1 HTML</header>
-  </div>
-  <div>
-    <footer>Aprendiz: Nicolas Pinto Barboza</footer>
-  </div>
-  <body>
-    <!--INICIO FORMULARIO-->
-    <form action="index.html" enctype="multipart/form-data"></form>
-    <div>
-      <!--NOMBRE-->
-      <label for="nombre">Nombre:</label>
-      <input
-        type="text"
-        id="nombre"
-        name="nombre"
-        inputmode="text"
-        pattern="[a-zA-Z]+"
-        required
-      />
-    </div>
-    <div>
-      <!--APELLIDO-->
-      <label for="apellido">Apellido:</label>
-      <input
-        type="text"
-        id="apellido"
-        name="apellido"
-        inputmode="latin-name"
-        pattern="[a-zA-Z]+"
-        required
-      />
-    </div>
-    <div>
-      <!--COLOR-->
-      <label for="color">Color:</label>
-      <input type="color" required />
-    </div>
-    <div>
-      <!--EDAD-->
-      <label for="edad">Edad:</label>
-      <input type="number" name="edad" min="1" required />
-    </div>
-    <div>
-      <!--NUMEROS-->
-      <label for="numeros">Numeros:</label>
-      <input
-        type="text"
-        id="soloNumeros"
-        name="soloNumeros"
-        pattern="\d"
-        title="Solo se permiten números."
-        required
-      />
-    </div>
-    <div>
-      <!--POSITIVOS-->
-      <label for="positivos">Positivos:</label>
-      <input
-        type="number"
-        id="soloPositivos"
-        name="soloPositivos"
-        min="0"
-        required
-      />
-    </div>
-    <div>
-      <!--MAXIMO-MINIMO-->
-      <label for="number">Maximo-Minimo:</label>
-      <input
-        type="number"
-        name="maximo-minimo"
-        value="15"
-        step="0,5"
-        max="20"
-        min="10"
-        required
-      />
-    </div>
-    <div>
-      <!--FECHA-NACIMIENTO-->
-      <label for="FechaNacimietno">Fecha de Nacimiento:</label>
-      <input type="date" />
-    </div>
-    <div>
-      <!--HORA-->
-      <label for="HoraRegistro">Hora de Registro:</label>
-      <input type="time" />
-    </div>
-    <div>
-      <!--CIUDAD-->
-      <label for="Ciudad">Ciudad:</label>
-      <select name="Ciudad" id="Ciudad">
-        <option value="Bucaramanga">Bucaramanga</option>
-        <option value="Bogota">Bogota</option>
-        <option value="Cali">Cali</option>
-        <option value="Barranquilla">Barranquilla</option>
-        <option value="Medellin">Medellin</option>
-        <option value="Otro">Otro</option>
-      </select>
-      <label for="Otro">Otro:</label>
-      <input type="text" />
-    </div>
-    <div>
-      <!--GENERO-->
-      <label for="Genero">Genero:</label>
-      <label for="Masculino">Masculino</label>
-      <input type="radio" name="Genero" id="Masculino" />
-      <label for="Femenino">Femenino</label>
-      <input type="radio" name="Genero" id="Femenino" />
-      <label for="Otro">Otro</label>
-      <input type="radio" name="Genero" id="Otro" />
-    </div>
-    <div>
-      <!--MATERIAS-->
-      <label for="Materias">Materias:</label>
-    </div>
-    <div>
-      <label for="HTML">HTML:</label>
-      <input type="checkbox" name="Materias" id="HTML" />
-    </div>
-    <div>
-      <label for="CSS">CSS:</label>
-      <input type="checkbox" name="Materias" id="CSS" />
-    </div>
-    <div>
-      <label for="JS">JS:</label>
-      <input type="checkbox" name="Materias" id="JS" />
-    </div>
-    <div>
-      <label for="JAVA">JAVA:</label>
-      <input type="checkbox" name="Materias" id="JAVA" />
-    </div>
-    <div>
-      <label for="PYTHON">PYTHON:</label>
-      <input type="checkbox" name="Materias" id="PYTHON" />
-    </div>
-    <div>
-      <label for="PHP">PHP:</label>
-      <input type="checkbox" name="Materias" id="PHP" />
-    </div>
-    <div>
-      <!--ARCHIVOS-->
-      <label for="Archivos">Archivos:</label>
-      <input
-        type="file"
-        id="Imagen"
-        name="Imagen"
-        accept=".jpg, .png"
-        required
-      />
-    </div>
-    <div>
-      <!--CONTRASEÑA-->
-      <label for="Contraseña">Contraseña:</label>
-      <input type="password" id="password" name="password" required />
-    </div>
-    <div>
-      <!--APRENDIZ-->
-      <label for="Aprendiz">Aprendiz:</label>
-      <input
-        type="text"
-        id="Nombre"
-        name="Nombre"
-        value="Nicolas Pinto Barboza"
-        disabled
-      />
-    </div>
 
-    <input type="submit" value="Enviar" />
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+</head>
+<div>
+  <header>FORMULARIO ACTIVIDAD 1 HTML</header>
+</div>
+<div>
+  <footer>Aprendiz: Nicolas Pinto Barboza</footer>
+</div>
+
+<body>
+  <!--INICIO FORMULARIO-->
+  <form action="index.html" enctype="multipart/form-data"></form>
+  <div>
+    <!--NOMBRE-->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" inputmode="text" pattern="[a-zA-Z]+" required />
+  </div>
+  <div>
+    <!--APELLIDO-->
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" inputmode="latin-name" pattern="[a-zA-Z]+" required />
+  </div>
+  <div>
+    <!--COLOR-->
+    <label for="color">Color:</label>
+    <input type="color" required />
+  </div>
+  <div>
+    <!--EDAD-->
+    <label for="edad">Edad:</label>
+    <input type="number" name="edad" min="1" required />
+  </div>
+  <div>
+    <!--NUMEROS-->
+    <label for="numeros">Numeros:</label>
+    <input type="text" id="soloNumeros" name="soloNumeros" pattern="\d" title="Solo se permiten números." required />
+  </div>
+  <div>
+    <!--POSITIVOS-->
+    <label for="positivos">Positivos:</label>
+    <input type="number" id="soloPositivos" name="soloPositivos" min="0" required />
+  </div>
+  <div>
+    <!--MAXIMO-MINIMO-->
+    <label for="number">Maximo-Minimo:</label>
+    <input type="number" name="maximo-minimo" value="15" step="0,5" max="20" min="10" required />
+  </div>
+  <div>
+    <!--FECHA-NACIMIENTO-->
+    <label for="FechaNacimietno">Fecha de Nacimiento:</label>
+    <input type="date" />
+  </div>
+  <div>
+    <!--HORA-->
+    <label for="HoraRegistro">Hora de Registro:</label>
+    <input type="time" />
+  </div>
+  <div>
+    <!--CIUDAD-->
+    <label for="Ciudad">Ciudad:</label>
+    <select name="Ciudad" id="Ciudad">
+      <option value="Bucaramanga">Bucaramanga</option>
+      <option value="Bogota">Bogota</option>
+      <option value="Cali">Cali</option>
+      <option value="Barranquilla">Barranquilla</option>
+      <option value="Medellin">Medellin</option>
+      <option value="Otro">Otro</option>
+    </select>
+    <label for="Otro">Otro:</label>
+    <input type="text" />
+  </div>
+  <div>
+    <!--GENERO-->
+    <label for="Genero">Genero:</label>
+    <label for="Masculino">Masculino</label>
+    <input type="radio" name="Genero" id="Masculino" />
+    <label for="Femenino">Femenino</label>
+    <input type="radio" name="Genero" id="Femenino" />
+    <label for="Otro">Otro</label>
+    <input type="radio" name="Genero" id="Otro" />
+  </div>
+  <div>
+    <!--MATERIAS-->
+    <label for="Materias">Materias:</label>
+  </div>
+  <div>
+    <label for="HTML">HTML:</label>
+    <input type="checkbox" name="Materias" id="HTML" />
+  </div>
+  <div>
+    <label for="CSS">CSS:</label>
+    <input type="checkbox" name="Materias" id="CSS" />
+  </div>
+  <div>
+    <label for="JS">JS:</label>
+    <input type="checkbox" name="Materias" id="JS" />
+  </div>
+  <div>
+    <label for="JAVA">JAVA:</label>
+    <input type="checkbox" name="Materias" id="JAVA" />
+  </div>
+  <div>
+    <label for="PYTHON">PYTHON:</label>
+    <input type="checkbox" name="Materias" id="PYTHON" />
+  </div>
+  <div>
+    <label for="PHP">PHP:</label>
+    <input type="checkbox" name="Materias" id="PHP" />
+  </div>
+  <div>
+    <!--ARCHIVOS-->
+    <label for="Archivos">Archivos:</label>
+    <input type="file" id="Imagen" name="Imagen" accept=".jpg, .png" required />
+  </div>
+  <div>
+    <!--CONTRASEÑA-->
+    <label for="Contraseña">Contraseña:</label>
+    <input type="password" id="password" name="password" required />
+  </div>
+  <div>
+    <!--APRENDIZ-->
+    <label for="Aprendiz">Aprendiz:</label>
+    <input type="text" id="Nombre" name="Nombre" value="Nicolas Pinto Barboza" disabled />
+  </div>
+
+  <input type="submit" value="Enviar" />
+</body>
+
 </html>
