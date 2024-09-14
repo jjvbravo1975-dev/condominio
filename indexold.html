@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación Formularios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p>
+    Todos los campos son obligatorios, el formulario solo se puede enviar cuado se cumplan todas las condiciones.
+  </p>
+  <p>
+    los campos son demostrativos, el aprendiz debe modificar el html para su correcto funcionamiento, es decir modificar
+    los atributos o las mismas etiquetas.
+  </p>
+  <hr>
+  <form action="">
+    <!-- Campo solo letras mayusculas y minusculas -->
+    <div>
+      <div>
+        <b>Validar Campo que al enviar solo se puedan enviar letras (a - z) tanto minusculas como mayusculas</b>
+      </div>
+      <div>
+        <label for="nombre">Nombre</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Campo solo letras minusculas -->
+    <div>
+      <div>
+        <b>Validar Campo que al enviar solo se puedan enviar letras (a - z) solo letras minusculas</b>
+      </div>
+      <div>
+        <label for="apellido">apellido</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Campo solo letras minusculas -->
+    <div>
+      <div>
+        <b>Modificar el campo para que el usuario pueda seleccionar su color favorito</b>
+      </div>
+      <div>
+        <label for="color">Color</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Campo solo números -->
+    <div>
+      <div>
+        <b>Modificar el campo para que el usuario solo pueda ingresar números</b>
+      </div>
+      <div>
+        <label for="edad">Edad</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Campo solo números mediante modificación -->
+    <div>
+      <div>
+        <b>Validar el campo para que el usuario solo pueda ingresar números sin que el tipo deje de ser text, el campo
+          siempre tiene que ser (type="text")</b>
+      </div>
+      <div>
+        <label for="numeros">Números</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+    <!-- Validar que el usuario solo pueda ingresar números positivos -->
+
+    <hr>
+
+    <div>
+      <div>
+        <b>Validar el campo para que el usuario solo pueda ingresar números positivos</b>
+      </div>
+      <div>
+        <label for="positivos">Positivos</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+    <!-- El usuario podra incrematar de 0.5 en 0.5 y solo podra incremantar hasta 20, igualmente no podra decrementar menos de 10 y al iniciar el formulario iniciar con 15 -->
+
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra incrematar de 0.5 en 0.5 y solo podra incremantar hasta 20, igualmente no podra
+          decrementarmenos de 10 y al
+          iniciar el formulario inicia con 15</b>
+      </div>
+      <div>
+        <label for="maximo_minimo">maximo-minimo</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+    <!-- El usuario podra seleccionar la fecha de nacimiento -->
+
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra seleccionar la fecha de nacimiento</b>
+      </div>
+      <div>
+        <label for="fecha_nacimiento">Fecha nacimiento</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+    <!-- El usuario podra seleccionar la hora de registro -->
+
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra seleccionar la hora de registro</b>
+      </div>
+      <div>
+        <label for="hora">hora</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- El usuario podra seleccionar la su ciudad -->
+
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra seleccionar su ciudad</b>
+      </div>
+      <div>
+        <label for="ciudad">Ciudad</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- El usuario podra seleccionar su genero y solo podra selecciona un unico genero (Masculino, Femenino , Otro) -->
+
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra seleccionar su genero y solo podra selecciona un unico genero (Masculino, Femenino ,
+          Otro)</b>
+      </div>
+      <div>
+        <label for="genero">genero</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- El usuario podra seleccionar varias materias, (HTML, CSS, JS, JAVA, PYTHON, PHP) este campo es opcional es decir se debe trasnformar pero no es obligatorio estar seleccionada alguna materia -->
+
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra seleccionar varias materias, (HTML, CSS, JS, JAVA, PYTHON, PHP) este campo es opcional es
+          decir se
+          debe trasnformar pero no es obligatorio estar seleccionada alguna materia</b>
+      </div>
+      <div>
+        <label for="materias">Materias</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- El usuario podra seleccionar varias imagenes pero el formato valido es .jpg y .png -->
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra seleccionar varias imagenes pero el formato valido es .jpg y .png</b>
+      </div>
+      <div>
+        <label for="archivos">Archivos</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+
+    <!-- El usuario podra ingresar su contraseña -->
+    <hr>
+
+    <div>
+      <div>
+        <b>El usuario podra ingresar su contraseña</b>
+      </div>
+      <div>
+        <label for="contrasena">contraseña</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- Campo para que el aprendiz ingrese su nombre, este campo debe ser de solo lectura, es decir debe estar bloqueado, es decir debe estar bloqueado y al iniciar el formulario debe estar lleno con el nombre del aprendiz -->
+    <hr>
+
+    <div>
+      <div>
+        <b>Campo para que el aprendiz ingrese su nombre, este campo debe ser de solo lectura, es decir debe estar
+          bloqueado y al iniciar el formulario debe estar lleno con el nombre del aprendiz</b>
+      </div>
+      <div>
+        <label for="aprendiz">aprendiz</label>
+      </div>
+      <div>
+        <input type="text">
+      </div>
+    </div>
+
+    <div>
+      <button type="button">Validar formulario</button>
+    </div>
+    <div>
+      <span>
+        Felicidades, llegamos al final del formulario, eso quiere decir que ya entendimos la actividad. fecha de entrega
+        (sabado 14 de Septiembre del 2024).
+      </span>
+    </div>
+  </form>
+</body>
+
+</html>
